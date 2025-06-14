@@ -7,9 +7,33 @@
     --body-font: 'roboto', intel;
 }
 header {
-    background-color:var(--primary-color);
-    color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    background-color:dimgray;
+    font-size: larger;
+    max-width: 1000px;
 
+
+}
+nav {
+    display: flex;
+    list-style: none;
+    font-family: var(--heading-font);
+    justify-content: space-around;
+    
+}
+
+nav a {
+    padding: 1em;
+    color: white;
+    font-family: var(--heading-font);
+    width: 100%;
+
+}
+nav a:hover {
+    background-color: white;
+    color:dimgray;
 }
 * {
     margin: 0;
@@ -18,21 +42,36 @@ header {
 }
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--accent2-color);
+    width: 90%;
+    max-width: 990px;
+    margin: 10px auto;
 }
+a {
+    text-decoration: none ;
+}
+
  main, header, footer {
-    width: 850px;
-    margin: auto;
+    max-width: 950px;
+    margin: 0 auto;
+}
+header img {
+    width: 130px;
+    
 }
 h1, h2 {
-    font-family: var(--heading-font);
+    font-family: var(--headng-font);
     color: var(--accent2-color);
 }
 nav, p, section, article {
-    padding: 1px;
+    padding: 8px;
+    margin: 16px;
 }
-.socialmedia a {
+
+.Social a {
     text-decoration: none;
+
+
 }
 .hero {
     position: relative;
@@ -42,37 +81,87 @@ nav, p, section, article {
     display: block;
     width: 100%;
     height: auto;
+    margin: 0 0.25rem 0 1rem;
+
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
     padding: 16px;
+    margin: 1rem;
+    font-size: 2em;
     text-align: center;
     opacity: 0.9;
     background-color: var(--secondary-color);
     color: var(--accent2-color);
 }
-article {
+.hero article {
     position: absolute;
     bottom: 70px;
-    width: 49rem;
     padding: 17px;
     opacity: 0.8;
     background-color: var(--accent2-color);
     color: var(--primary-color);
-    margin: 2rem;
+    margin: 1rem;
 }
+
 
 .hero article img {
     float: right;
     margin: auto;
     width: 125px;
-    left: 40rem;
-    top: 0px;
     
-}   
-footer img {
-    width: 40px;
-}    
+} 
+footer {
+    background-color:dimgray;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 1em;
+}        
+.Social {
+    grid-column: 3;
+    justify-self:end ;
+}
+.Social img {
+    width: 3em;
+
+}
+
+.History {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 2em;
+    margin: 50px 0;
+    
+} 
+.History h2, 
+.Adventure h2 {   
+    grid-column: 1/-1; 
+    justify-self: center;
+    padding: 1em 0;
+} 
+.Adventure {
+    margin: 1px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+.History img {
+    display: grid;
+    grid-column: 2;
+    max-width: 15rem;
+}
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 3px;
+  max-width: 150px;
+  margin: auto;
+}

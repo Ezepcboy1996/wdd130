@@ -187,7 +187,6 @@ footer {
 }
 .employees h2 {
     color: black;
-    grid-template-columns: 1fr 1fr;
     justify-self: center;
 }
 .employees {

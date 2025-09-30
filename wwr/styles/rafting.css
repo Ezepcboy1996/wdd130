@@ -30,7 +30,6 @@ h1, h2 {
     background-color: var(--accent2-color);
     text-align: center;
     padding: 7px;
-    position: absolute;
     
 }
 nav, p, section, article {

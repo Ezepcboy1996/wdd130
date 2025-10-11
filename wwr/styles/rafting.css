@@ -22,12 +22,6 @@ header img {
     margin-left: 100px;
     background: grey;
 }
-nav ul {
-    position: absolute;
-    width: 100% auto;
-    justify-content: center;
-    top: 40px;
-}
 .search {
     display: flex;
     list-style: none;
@@ -67,13 +61,6 @@ header, main, footer {
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
-
-}
-.history {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr ;
-    gap: em;
-    margin: 50px 0;
 
 }
 .history h2,
@@ -166,7 +153,7 @@ footer {
 input[type="checkbox"] {
     width: 22px;
     height: 22px;
-    vertical-align:midd;
+    vertical-align: middle;
 }
 button {
     margin: 1em;

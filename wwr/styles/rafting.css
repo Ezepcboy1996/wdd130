@@ -58,6 +58,10 @@ header, main, footer {
     color: var(--secondary-color);
     
 }
+h1, h2 {
+    font-family: Arial, Helvetica, sans-serif;
+     color: var(--primary-color);
+}
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
@@ -102,7 +106,7 @@ nav, p, section, article {
 h {
     position: absolute;
     top: 20px;
-    width: 24em;
+    width: 100%;
     padding: 16px;
     text-align: center;
     opacity: 0.7;
@@ -153,7 +157,7 @@ footer {
 input[type="checkbox"] {
     width: 22px;
     height: 22px;
-    vertical-align: middle;
+    vertical-align: ;
 }
 button {
     margin: 1em;

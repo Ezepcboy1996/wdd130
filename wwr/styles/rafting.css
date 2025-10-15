@@ -258,9 +258,11 @@ button:hover {
 }
 .contactform {
     display: grid;
+    grid-template-columns: 1fr;
     grid-column: 2/6;
     grid-row: 2/4;
     gap: 1em;
+    padding: 3em;
 }
 .address a, p {
     gap: 1em;

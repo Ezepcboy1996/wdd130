@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>White Water Rafting Company | Contact Us </title>
-    <meta name="description" content="various ways to contact us, we are available at all times yo serve you better.">
+    <meta name="description" content="various ways to contact us, we are available at all times to serve you better.">
     <meta name="author" content="Eze Prosper">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -13,86 +13,75 @@
 <body>
     <header>
         <img src="images/logo.jpg" alt="Rafting Site logo">
-        <div class="about">
-            <nav>
-                <ul class="search">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="trips.html">Trips</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
         </div>
     </header>
+    <main class="contactus">
+        <form action="#" class="contactform">
+            <fieldset>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-    <main class=" contactus">
-        <h1>White Water Rafting Company</h1>
-        <p>165 umuola street, Aba,Abia State</p>
-        <p>+2347565467265</p>
-        <p>info@whitewater.org</p>
-        <fieldset>
+                <label for="emailaddress">Email:</label>
+                <input type="email" id="emailaddress" name="email" required>
+            </fieldset>
 
-            <form action="#" class="contactform">
+            <fieldset class="radio-input">
+                <input type="radio" id="huey" name="drone" value="genaral" checked />
+                <label for="hrule">Genaral Question</label>
+
+                <input type="radio" id="reservation" name="drone" value="reservation">
+                <label for="hrule">Reservation Question</label>
+
+                <input type="radio" id="suggestion" name="drone" value="suggestion">
+                <label for="hrule">Website Suggestion</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="message">Massage:</label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </fieldset>
+            <div class="signup">
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <label for="newsletter">please subscrib to my monthly news letter</label>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+
+            <section class="address">
+                <h2>Our Contact Information</h2>
+                <p>125 oluwa Shegu street,<br>Abia State</p>
+                <a href="tell: +234-9765-323-4664">(+234) 9765-323-4664</a>
+
+                <a href="whitewater@gmail.com">infor@whitewater.com</a>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d127224.60199537496!2d6.603108927929688!3d4.8097128830839075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1760206333777!5m2!1sen!2sng"
-                    width="600" height="450" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="name">
-                    <label for="name"> Name:</label>
-                    <input type="text" id="Name" name="name" required placeholder="Prosper">
-
-                    <label for="emailadress">Email:</label>
-                    <input type="text" id="email" name="email" required>
-                </div>
-
-
-
-                <sectio class="radio-button">
-
-                    <input type="radio" id="genaral" name="drone" value="genaral" checked />
-                    <label for="genaral">Genaral inquiry</label>
-
-                    <input type="radio" id="reservation" name="res" value="reservation" checked />
-                    <label for="genaral">Reservation Question</label>
-
-                    <input type="radio" id="suggestion" name="drone" value="suggestion" checked />
-                    <label for="genaral">Wedsite Suggestion</label>
-                    <section></section>
-
-
-                    <section class="message">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="10" rows="7"></textarea>
-                    </section>
-
-                    <section class="signup">
-                        <input type="checkbox" name="newsletter" id="newsletter">
-                        <label for="newsletter">please subscibe to my monthly newaletter</label>
-            </form>
-            <button type="submit" class="submit-button">submit</button>
-        </fieldset>
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d508892.6506132061!2d7.0047965!3d4.8174104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1760464556535!5m2!1sen!2sng"
+                    width="600" height="450;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="gmap"></iframe>
+            </section>
+            <hr class="hrule">
+            <section class="employees">
+                <figure>
+                    <img src="images/ceo.jpg" alt="cso">
+                    <figcaption>CSO</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/happyclient.jpg" alt="happyclient">
+                    <figcaption>MANAGER</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting59_600.jpg" alt="rafting site">
+                    <figcaption>TOUR GIUDES</figcaption>
+                </figure>
+            </section>
         </form>
 
-        <hr class="hrule">
-
-        <h2>Our Employees</h2>
-        <section class="employees">
-            <figure class="employee1">
-                <img src="images/rafting59_600.jpg" alt="TOUR GIUDES">
-                <figcaption>TOUR GUIDES</figcaption>
-            </figure>
-            <figure class="employee 2">
-                <img src="images/happyclient.jpg" alt="happyclient">
-                <figcaption>MANAGER</figcaption>
-            </figure>
-            <figure class="employee 3">
-                <img src="images/tour_guide.jpg" alt="CEO">
-                <figcaption>CEO</figcaption>
-            </figure>
-        </section>
     </main>
     <footer>
-
 
         <nav class="socialmedia">
             <p>©2025 🌴 Eze Prosper 🌴 White Water Rafting Site </p>

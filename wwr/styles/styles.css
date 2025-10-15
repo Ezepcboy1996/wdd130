@@ -24,7 +24,7 @@ nav a {
 h1 {
     color: var(--heading-text-color);
     border-bottom: 2px solid black;
-    background-color: var(--heading-backgroud-color);
+    background-color: whitesmoke;
     font-family: var(--heading-font);
     padding: var(--padding);
 }
@@ -45,6 +45,7 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
 
 }
 aside img {
@@ -63,10 +64,6 @@ header, .grid, footer {
     text-align: center;
     max-width: 840px;
     margin: 0 auto;
-}
-.grid {
-    display: grid;
-    align-items: center;
 }
 main {
     grid-column: 2/3;

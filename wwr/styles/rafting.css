@@ -7,7 +7,7 @@
     --heading-font: 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap';
 }  
 header {
-    color: var(--accent2-color);
+    color: white;
     margin: 1rem auto;
     display: grid;
     grid-template-columns:200px auto;
@@ -346,8 +346,6 @@ tr:nth-child(even) {
 .contactus1 a:hover { 
     color: navy;
     background-color: aqua;
-    border: px;
-    
 }
 .contactus1 {
     padding: 1em;

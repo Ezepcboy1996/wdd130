@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #ffffff;
-    --secondary-color: #3a3a8b;
+    --primary-color: navy;
+    --secondary-color: lightskyblue;
     --accent1-color: #0b0b9499;
     --accent2-color: #000000;
     --body-font: 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap';
@@ -13,11 +13,11 @@ header {
     grid-template-columns:200px auto;
     align-items: center;
     border-bottom: 1px solid #ccc;
-    background-color: gray;
+    background-color: var(--secondary-color);
 }
 header img {
     width: 150px;
-    background: grey;
+    background-color: aqua;
 }
 nav {
     display: flex;
@@ -32,9 +32,9 @@ nav a {
     color: var(--primary-color);
     text-decoration: none;
 }
+figcaption {color: blue;}
 nav a:hover {
-    background-color: gray;
-    color: black;
+    color: whitesmoke;
 }
 .search {
     display: flex;
@@ -86,15 +86,31 @@ nav, p, section, article {
     grid-template-columns: 2fr 1fr 2fr;
     gap: 2em;
     margin: 50px 0;
+    background-color:var(--secondary-color);
+    color: black;
 }
 .history h2,
 .adventure h2 {
     grid-column: 1/-1;
     justify-self: center;
     padding: 1em;
+    color: green;
 }
 .history img {
     width: 200px;
+}
+.hist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6em;
+    margin: 50px 0;
+    color: black;
+}
+.hist h2 {
+     grid-column: 1/-1;
+    justify-self: center;
+    padding: 1em;
+    color: green;
 }
 .adventure {
     display: grid;
@@ -112,12 +128,12 @@ nav, p, section, article {
     align-items: center;
 }
 .socialmedia img {
-    width: 3em;
+    width: 2em;
     
 }
 .socialmedia p {
     align-items: center;
-    color: white;
+    color: blue;
 }
 .socialmedia:hover {
     background-color: unset;
@@ -149,7 +165,7 @@ article {
     position: absolute;
     background-color: var(--accent2-color);
     top: 20em;
-    color: var(--primary-color);
+    color: white;
     opacity: 0.7;
 }
 
@@ -159,20 +175,12 @@ article {
     
 }
 figure {
-  border: thin silver solid;
+
   display: flex;
   flex-flow: column;
   padding: 0px;
   max-width: 150px;
-  justify-items: center ;
   margin: 6px;
-
-}
-figcaption {
-  background-color: #222222;
-  color: white;
-  font: italic smaller sans-serif;
-  padding: 1px;
   text-align: center;
 } 
 h2 {
@@ -180,14 +188,14 @@ h2 {
 } 
 footer {
     display: flex;
-    justify-content: center;
-    background-color: gray;
+    justify-content: space-between;
+    background-color:var(--secondary-color);
     padding: 1rem; 
+     color: blue;
+    align-items: baseline;
+    display: flex;
 }
-footer p {
-    color: var(--primary-color);
-    align-items: end;
-}
+
 input[type="checkbox"] {
     width: 20px;
     height: 16px;
@@ -305,6 +313,7 @@ table {
         width: 100%;
          border-collapse: collapse;
         margin: 20px auto;
+        color: #000000;
 }
 th, td {
         border: 1px solid #ddd;
@@ -336,6 +345,8 @@ tr:nth-child(even) {
 }
 .contactus1 a:hover { 
     color: navy;
+    background-color: aqua;
+    border: px;
     
 }
 .contactus1 {
@@ -363,4 +374,12 @@ header, .grid, foote {
 aside img {
     width: 200px;
     height: auto;
+}
+.eform {
+      display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 2em;
+    margin: 50px 0;
+    color: blue;
+    background-color: var(--secondary-color);
 }
